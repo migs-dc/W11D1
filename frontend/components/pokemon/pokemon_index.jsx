@@ -24,7 +24,7 @@ class PokemonIndex extends React.Component{
     </section>
     )
   }
-  }
+}
   
   
   
