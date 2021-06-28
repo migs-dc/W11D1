@@ -12,6 +12,17 @@ class PokemonDetail extends React.Component{
             this.props.requestSinglePokemon(this.props.match.params.pokemonId)
         } 
     }
+
+    render(){
+        debugger
+        return(
+            <div>
+                {this.props.moves.map(move => {
+                    return <li key={move.id}> {move.name} </li>
+                })}
+            </div>
+        )
+    }
 }
 
 export default PokemonDetail
